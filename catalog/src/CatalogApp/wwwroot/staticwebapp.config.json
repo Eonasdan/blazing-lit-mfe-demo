@@ -1,6 +1,14 @@
 {
     "globalHeaders": {
-        "Access-Control-Allow-Origin": "https://gentle-river-0e21e6610.3.azurestaticapps.net",
+        "Access-Control-Allow-Origin": "https://localhost:7043",
         "Access-Control-Allow-Credentials": "true"
-    }
+    },
+    "routes": [
+        {
+            "route": "/*",
+            "headers": {
+                "Access-Control-Allow-Origin": ["https://localhost:7043"]
+            }
+        }
+    ]
 }
